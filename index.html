@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho | Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER COM NAVEGAÇÃO -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>🌱 Agro Sustentável</h1>
+                <p>Agrinho 2025 • Plantação & Equilíbrio</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#plantacoes">Plantações</a></li>
+                    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                    <li><a href="#simulador">Simulador ECO</a></li>
+                    <li><a href="#dicas">Dicas Verdes</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Agro Forte, <span class="highlight">Futuro Sustentável</span></h2>
+            <p>Equilíbrio inteligente entre produção agrícola e preservação ambiental. Cultivamos o amanhã com responsabilidade e inovação.</p>
+            <a href="#simulador" class="btn btn-primary">🌾 Calcular impacto sustentável →</a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PLANTAÇÕES -->
+    <section id="plantacoes" class="plantacoes">
+        <div class="container">
+            <h2 class="section-title">🌽 Plantações Sustentáveis 🌻</h2>
+            <div class="cards-grid" id="cardsContainer"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SUSTENTABILIDADE -->
+    <section id="sustentabilidade" class="sustentabilidade">
+        <div class="container">
+            <h2 class="section-title">⚖️ Equilíbrio: Produção + Meio Ambiente</h2>
+            <div class="flex-sustentavel">
+                <div class="text-sustentavel">
+                    <h3>Práticas regenerativas</h3>
+                    <p>Rotação de culturas, plantio direto, agrofloresta e uso eficiente da água aumentam a produtividade sem agredir o solo. As plantações bem manejadas capturam carbono e protegem a biodiversidade.</p>
+                    <div class="beneficios">
+                        <span>✅ Menos defensivos químicos</span>
+                        <span>✅ Recuperação de nascentes</span>
+                        <span>✅ Energia renovável no campo</span>
+                    </div>
+                </div>
+                <div class="stats" id="statsContainer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR INTERATIVO -->
+    <section id="simulador" class="simulador-section">
+        <div class="container">
+            <div class="simulador-card">
+                <h3>📊 Simulador de Impacto Sustentável</h3>
+                <p>Descubra como técnicas verdes aumentam a eficiência da sua lavoura enquanto reduzem danos ao meio ambiente.</p>
+                
+                <div class="form-group">
+                    <label>🌾 Tipo de plantação:</label>
+                    <select id="culturaSelect">
+                        <option value="soja">Soja (tradicional)</option>
+                        <option value="milho">Milho (com rotação)</option>
+                        <option value="cafe">Café agroflorestal</option>
+                        <option value="horta">Horta orgânica</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>📏 Área (hectares):</label>
+                    <input type="number" id="areaHectares" value="10" min="1" max="500">
+                </div>
+
+                <div class="form-group">
+                    <label>💧 Tecnologia sustentável:</label>
+                    <select id="tecnologiaSelect">
+                        <option value="irrigacao">Irrigação por gotejamento</option>
+                        <option value="rotacao">Rotação de culturas</option>
+                        <option value="agrofloresta">Sistema agroflorestal</option>
+                        <option value="convencional">Manejo convencional (baseline)</option>
+                    </select>
+                </div>
+
+                <button id="calcularImpacto" class="btn btn-success">Calcular Selo Verde 🌿</button>
+                
+                <div id="resultadoSimulador" class="resultado-card">
+                    Preencha os dados e clique em calcular para ver o impacto sustentável.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DICAS SUSTENTÁVEIS -->
+    <section id="dicas" class="dicas">
+        <div class="container">
+            <div class="dica-container" id="dicaContainer">
+                <h3>🌿 Dica do Dia: Plantas de Cobertura</h3>
+                <p>Utilizar crotalária ou mucuna entre safras protege o solo da erosão, fixa nitrogênio e diminui plantas daninhas.</p>
+                <button id="novaDicaBtn" class="btn btn-secondary">💡 Nova dica sustentável</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>🌎 Projeto Agrinho - Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
+            <p>Desenvolvido com consciência ambiental | 🌱 Plantações que respeitam o planeta</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
